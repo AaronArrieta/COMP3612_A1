@@ -1,0 +1,13 @@
+These are a list of links to my references used to help with
+with certain portions of this assignment:
+
+https://stackoverflow.com/questions/18078871/hide-check-radio-button-with-css
+https://www.w3schools.com/tools/tool_meta_generator.php
+https://www.w3schools.com/html/html_forms.asp
+https://www.w3schools.com/cssref/sel_before.php 
+https://www.w3schools.com/css/css3_object-fit.asp
+https://www.w3schools.com/cssref/css_pr_aspect-ratio.php
+https://www.w3schools.com/cssref/func_minmax.php
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+https://www.w3schools.com/css/css_grid.asp
+https://www.w3schools.com/css/css3_flexbox.asp

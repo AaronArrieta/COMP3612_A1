@@ -89,7 +89,7 @@ body {
     color: white;
 }
 
-/* decorative curly braces behind the text */
+/* (w3schools) decorative curly braces behind the text */
 .hero::before,
 .hero::after {
     position: absolute;
@@ -313,6 +313,8 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.8rem;
 }
+
+/* (w3schools) */
 
 .shop-nav li + li::before {
     content: ">";
@@ -566,6 +568,8 @@ legend,
     gap: 0.5rem;
 }
 
+
+/* (stackoverflow answer) */
 .size-option input,
 .color-option input {
     position: fixed;
@@ -643,6 +647,279 @@ legend,
 .wishlist-button:hover {
     border: 2px solid black;
 }
+
+
+
+/* - ABOUT.HTML PAGE - */
+
+.container.narrow { max-width: 900px;}
+
+.hero.hero-about {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero.hero-about h1{
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+}
+
+.hero.hero-about p{
+    margin: 0;
+}
+
+/* about story */
+.story {
+    background-color: #f3f4f7;
+    padding: 3rem 0;
+    border-bottom: 2px solid #dadde3;
+}
+
+.story-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.story p {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #5d6475;
+}
+
+.story h2 {
+    margin: 0;
+    font-size: 1.7rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*values*/
+.values {
+    background-color: white;
+    padding: 3rem 0;
+    border-bottom: 2px solid #dadde3;
+}
+
+.values h2 {
+    margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.values p {
+    font-size: 0.8rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.value-card {
+    padding: 1.5rem 1.25rem;
+    background-color: #f3f4f7;
+    border: 2px solid #dadde3;
+    border-radius: 3px;
+}
+
+.value-icon {
+    display: grid;
+    place-items: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    background-color: #171b26;
+    border-radius: 3px;
+}
+
+.value-icon.Q{
+    color: goldenrod;
+}
+.value-icon.S{
+    color: #478075;
+}
+.value-icon.I{
+    color: white;
+}
+
+.value-card p {
+    margin:0;
+    line-height: 1.55;
+    color: #5d6475
+}
+
+
+/* team */
+
+.team {
+    background-color: #f3f4f7;
+    padding: 3rem 0;
+    border-bottom: 2px solid #dadde3;
+}
+.team-desc {
+    max-width: 24rem;
+    margin: 0.75rem 0 2rem;
+    line-height: 1.6;
+    color: #5d6475;
+    font-size: 0.9rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+
+}
+
+.team-member figure {
+    /* (w3schools) */ 
+    aspect-ratio: 1;
+    margin: 0 0 1rem;
+    border:1px solid #dadde3
+}
+
+.team-member img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* (w3schools) */ 
+    object-fit: cover;
+}
+
+.team-member h3 {
+    margin: 0 0 0.1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.team-member .team-role {
+    margin: 0 0 0.5rem;
+    color: goldenrod;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+}
+
+.team-member p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #5d6475;
+}
+
+/* journey timeline */
+.journey {
+    padding: 3rem 0;
+    border-bottom: 2px solid #dadde3;
+}
+
+.journey h2 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 0 0 0 1.5rem;
+    list-style: none;
+    border-left: 1px solid #dadde3;
+}
+
+.timeline li {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline li::before {
+    content: "";
+    position: absolute;
+    left: -1.78rem;
+    top: 0.3rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background-color: goldenrod;
+    box-shadow: 0 0 0 3px white;
+}
+
+.timeline time {
+    display: block;
+    margin-bottom: 0.15rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    color: #478075;
+    font-weight: 500;
+}
+
+.timeline p {
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* contact */
+
+.contact {
+    background-color: #f3f4f7;
+    padding: 3rem;
+    border-bottom: 2px solid #dadde3;
+}
+
+.contact h2 {
+    margin-bottom: 2rem;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.contact-grid {
+    display: grid;
+    /* (w3schools) */ 
+    grid-template-columns: minmax(0, 15rem) minmax(0, 15rem);
+    gap: 1.25rem;
+}
+
+.contact-card {
+    padding: 1.1rem;
+    background-color: white;
+    border: 1px solid #dadde3;
+    font-style: normal;
+}
+
+.contact-card h3 {
+    margin: 0 0 0.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.85rem;
+}
+
+.contact-card p {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: #5d6475;
+}
+
+/* (w3schools) */ 
+
+@media (max-width: 900px) {
+    .story-layout,
+    .values-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 @media (max-width: 900px) {
     .product-layout {
