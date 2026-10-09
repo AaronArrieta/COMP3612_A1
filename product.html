@@ -1,28 +1,122 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Merino Wool Cable Knit Sweater - COMP3612 Assign 1</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
-    <header class="site-header">
-        <div class="container">
-            <a class="logo" href="index.html"><span>//</span>COMP3612 ASSIGN 1</a>
-
-            <nav class="site-nav" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html" aria-current="page">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="about.html" aria-current="page">About</a></li>
-                    <li><a href="#" aria-current="page">Contact</a></li>
-                    <li><a href="#" aria-current="page">Cart (0)</a></li>
-
-                </ul>
-            </nav>
-        </div>
-    </header>
-
     <body>
+        <header class="site-header">
+            <div class="container">
+                <a class="logo" href="index.html"><span>//</span>COMP3612 Assign 1</a>
+
+                <nav class="site-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Cart (0)</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <nav class="shop-nav" aria-label="Breadcrumb">
+            <div class="container">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Sweaters</a></li>
+                    <li aria-current="page">Merino Wool Cable Knit Sweater</li>
+                </ol>
+            </div>
+        </nav>
+
+        <main>
+            <article>
+                <section class="product-main" aria-labelledby="product-title">
+                    <div class="container product-layout">
+
+                        <div class="product-gallery">
+                            <figure class="gallery-main">
+                                <img src="data/images/003-medium-front.png" alt="Navy merino wool cable knit sweater, front view">
+                            </figure>
+
+                            <div class="small-gallery">
+                                <a href="#"><img src="data/images/003-thumb-front.png" alt="Sweater front view"></a>
+                                <a href="#"><img src="data/images/003-thumb-front-angle.png" alt="Sweater front angle view"></a>
+                                <a href="#"><img src="data/images/003-thumb-back.png" alt="Sweater back view"></a>
+                            </div>
+                        </div>
+
+                        <div class="product-info">
+                            <h1 id="product-title">Merino Wool Cable Knit Sweater</h1>
+                            <p class="rating"><span class="stars" aria-hidden="true">★★★★★</span> (4.8/5) - 127 reviews</p>
+                            <p class="product-price">$119.99</p>
+                            <p class="product-description">This luxurious cable knit sweater is made from 100% merino wool for exceptional warmth and softness. The classic cable pattern adds timeless texture and visual interest to this versatile piece. Natural temperature regulation properties make it perfect for transitional seasons.</p>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="product-details" aria-labelledby="details-heading">
+                    <div class="container">
+                        <ul class="tab-list">
+                            <li><a class="active" href="#details-heading">Description</a></li>
+                            <li><a href="#details-heading">Specifications</a></li>
+                            <li><a href="#details-heading">Care Instructions</a></li>
+                        </ul>
+
+                        <h2 id="details-heading">Product Details</h2>
+                        <p class="details-text">This luxurious cable knit sweater is made from 100% merino wool for exceptional warmth and softness. The classic cable pattern adds timeless texture and visual interest to this versatile piece. Natural temperature regulation properties make it perfect for transitional seasons.</p>
+
+                        <h3 class="key-header">Key Features:</h3>
+                        <table class="features-table">
+                            <tbody>
+                                <tr><th scope="row">Material</th><td>100% premium merino wool</td></tr>
+                                <tr><th scope="row">Style</th><td>Classic cable knit pattern</td></tr>
+                                <tr><th scope="row">Closures</th><td>Ribbed cuffs and hem</td></tr>
+                                <tr><th scope="row">Care</th><td>Dry clean recommended</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="reviews" aria-labelledby="reviews-heading">
+                    <div class="container">
+                        <h2 id="reviews-heading" class="review-header">Customer Reviews</h2>
+
+                        <article class="review">
+                            <div class="review-head">
+                                <p class="name">Maria C. <span class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</span></p>
+                                <time datetime="2025-03-10">March 10, 2025</time>
+                            </div>
+                            <p class="review-text">Absolutely stunning sweater! The merino wool is incredibly soft and the cable knit detail is beautiful. Worth the investment.</p>
+                        </article>
+
+                        <article class="review">
+                            <div class="review-head">
+                                <p class="name">Robert H. <span class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span></p>
+                                <time datetime="2025-03-05">March 5, 2025</time>
+                            </div>
+                            <p class="review-text">Bought this for our lead software engineer and she loves it. High quality construction and the wool feels luxurious. Fits true to size.</p>
+                        </article>
+
+                        <article class="review">
+                            <div class="review-head">
+                                <p class="name">Nina F. <span class="stars" role="img" aria-label="4 out of 5 stars">★★★★☆</span></p>
+                                <time datetime="2025-02-28">February 28, 2025</time>
+                            </div>
+                            <p class="review-text">Beautiful sweater but requires dry cleaning which is inconvenient. The quality is excellent though and it's very warm.</p>
+                        </article>
+                    </div>
+                </section>
+            </article>
+        </main>
+
         <footer>
             <div class="container">
                 <div class="site-footer">
@@ -39,7 +133,7 @@
                     <section>
                         <h2>Company</h2>
                         <ul>
-                            <li><a href="about.html">About us</a></li>
+                            <li><a href="about.html">About Us</a></li>
                             <li><a href="#">Careers</a></li>
                             <li><a href="#">Press</a></li>
                             <li><a href="#">Privacy Policy</a></li>
@@ -55,11 +149,8 @@
                             <li><a href="#">Twitter</a></li>
                         </ul>
                     </section>
-
                 </div>
-
             </div>
         </footer>
     </body>
-
 </html>

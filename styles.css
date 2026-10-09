@@ -76,6 +76,10 @@ body {
     border-radius: 1px;
 }
 
+.site-nav a.active {
+    background-color: #34495e;
+}
+
 /* hero */
 .hero {
     position: relative;
@@ -291,6 +295,272 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+/* PRODUCT.HTML PAGE */
+
+.shop-nav {
+    background-color: white;
+    border-bottom: 1px solid #dadde3;
+}
+
+.shop-nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0.6rem 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+}
+
+.shop-nav li + li::before {
+    content: ">";
+    margin-right: 0.4rem;
+}
+
+.shop-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.shop-nav a:hover {
+    color: goldenrod;
+}
+
+.product-main {
+    background-color: #f3f4f7;
+    padding: 2.25rem 0 2rem;
+}
+
+.product-layout {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+/* gallery */
+
+.gallery-main {
+    margin: 0 0 0.6rem;
+    background-color: #dadde3;
+}
+
+.gallery-main img {
+    display: block;
+    width: 100%;
+}
+
+.small-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+}
+
+.small-gallery a {
+    display: block;
+    border: 2px solid transparent;
+    background-color: #dadde3;
+}
+
+.small-gallery a:hover {
+    border-color: goldenrod;
+}
+
+.small-gallery img {
+    display: block;
+    width: 100%;
+}
+
+/* product info */
+
+.product-info h1 {
+    max-width: 15rem;
+    margin: 0 0 0.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.rating {
+    margin: 0 0 0.9rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    color: goldenrod;
+    font-weight: 600;
+    
+}
+
+.stars {
+    letter-spacing: 1px;
+}
+
+.product-price {
+    margin: 0 0 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.product-description {
+    margin: 0 0 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #5d6475;
+}
+
+
+/* details + tabs */
+
+.product-details,
+.reviews {
+    background-color: #f3f4f7;
+}
+
+.product-details {
+    padding-bottom: 1rem;
+    border-top: 1px solid #dadde3;
+}
+
+.tab-list {
+    display: flex;
+    gap: 1.25rem;
+    margin: 0 0 1.5rem;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #dadde3;
+    font-size: 0.85rem;
+}
+
+.tab-list li a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 0.9rem 0 0.7rem;
+    border-bottom: 2px solid transparent;
+    color: #5d6475;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.tab-list li a:hover {
+    color: goldenrod;
+}
+
+.tab-list li a.active {
+    border-bottom-color: goldenrod;
+    color: black;
+}
+
+.product-details h2,
+.review-header {
+    margin: 0 0 0.75rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+.details-text {
+    max-width: 30rem;
+    margin: 0;
+    line-height: 1.65;
+    font-size: 0.85rem;
+    color: #5d6475;
+}
+
+.key-header {
+    margin: 1.5rem 0 0.75rem;
+    font-size: 0.9rem;
+}
+
+/* table */
+
+.features-table {
+    width: 100%;
+    max-width: 28rem;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.features-table th,
+.features-table td {
+    padding: 0.6rem 0.5rem;
+    border-bottom: 1px solid #dadde3;
+    text-align: left;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.features-table th {
+    width: 9rem;
+    color: #5d6475;
+}
+
+.features-table tr:last-child th,
+.features-table tr:last-child td {
+    border-bottom: 0;
+}
+
+/* reviews */
+
+.reviews {
+    padding: 1.75rem 0 3rem;
+    border-top: 1px solid #dadde3;
+}
+
+.review {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid #dadde3;
+}
+
+.review:last-child {
+    border-bottom: 0;
+}
+
+.review-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3rem;
+}
+
+.reviews .name {
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.reviews .stars {
+    margin-left: 0.4rem;
+    font-size: 0.75rem;
+    color: goldenrod;
+}
+
+.review time {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75rem;
+    color: #5d6475;
+}
+
+.review-text {
+    max-width: 34rem;
+    margin: 0;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: black;
+}
+
+@media (max-width: 900px) {
+    .product-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .review-head {
+        flex-direction: column;
+    }
+}
+
 
 @media (max-width: 900px) {
     .product-grid {
